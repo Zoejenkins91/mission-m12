@@ -2,21 +2,59 @@
 <html>
 <head>
 <title>Operation Midnight</title>
+
+<style>
+body {
+  background: #050505;
+  color: white;
+  text-align: center;
+  font-family: Arial, sans-serif;
+  padding-top: 80px;
+}
+
+h1 {
+  letter-spacing: 5px;
+}
+
+#message {
+  font-size: 22px;
+  line-height: 1.8;
+  min-height: 150px;
+}
+
+button {
+  background: #111;
+  color: white;
+  border: 1px solid white;
+  padding: 15px 30px;
+  font-size: 18px;
+  border-radius: 8px;
+}
+</style>
+
 </head>
 
-<body style="background:black; color:white; text-align:center; font-family:Arial;">
+<body>
 
 <h1>🌙 OPERATION MIDNIGHT</h1>
 
 <p id="message">Connecting...</p>
 
-<button onclick="startMission()">Begin Mission</button>
+<button onclick="startMission()">BEGIN MISSION</button>
 
 <script>
+
 function startMission() {
+
 document.getElementById("message").innerHTML =
-"ACCESS GRANTED<br><br>Welcome, Agent M12.<br><br>If you're reading this... you've been specially selected.";
+"SECURE CONNECTION ESTABLISHED<br><br>" +
+"SEARCHING FOR AGENT...<br><br>" +
+"IDENTITY CONFIRMED<br><br>" +
+"<b>WELCOME, AGENT M12</b><br><br>" +
+"If you're reading this... you've been specially selected.";
+
 }
+
 </script>
 
 </body>
