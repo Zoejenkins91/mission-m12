@@ -71,11 +71,47 @@ Today's objective is simple.
 Complete the Recruitment Test to earn your first key.
 </p>
 
-<button onclick="alert('Mission 001 coming soon... Director Night is preparing your first challenge.')">
-START MISSION
+  <button onclick="showMission()">
+ACCEPT MISSION
+</button>
+
+<div id="mission" style="display:none; margin-top:30px;">
+
+<h2>Mission Objective</h2>
+
+<p>
+Your first challenge is to prove you notice what others miss.
+</p>
+
+<p>
+Look around your room carefully.
+</p>
+
+<p>
+Find something that is shaped like a <b>key</b>.
+</p>
+
+<p>
+Once you've found it, press the button below.
+</p>
+
+<button onclick="missionComplete()">
+I FOUND IT
 </button>
 
 </div>
 
+</div>
+<script>
+
+function showMission(){
+  document.getElementById("mission").style.display="block";
+}
+
+function missionComplete(){
+  alert("🎉 Congratulations Agent M12!\n\nKEY 01 RECOVERED\n\n⭐ Agent Score: 100/600");
+}
+
+</script>
 </body>
 </html>
